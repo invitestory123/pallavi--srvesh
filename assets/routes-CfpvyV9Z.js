@@ -117,18 +117,28 @@ var c={
   shortGroom:_wc.shortGroom??"Sarvesh",
   tagline:_wc.tagline??"#FromOTTableToWeddingVows",
   hashtag:_wc.hashtag??"#FromOTTableToWeddingVows",
-  dateLabel:_ww.dateLabel??"8 – 9 December 2026",
+  dateLabel:_ww.dateLabel??"9 December 2026",
   weddingISO:_ww.weddingISO??"2026-12-09T18:30:00+05:30",
   story:_wc.story??"From saving lives side-by-side in the Operation Theatre to uniting their hearts in sacred wedding vows, two compassionate doctors begin their journey of life."
 };
 
 var l=_w.events??[
-  {name:"Mehendi",day:"Day 1 (8 Dec)",glyph:"❁",date:"8 Dec 2026",time:"12:30 PM – 4:00 PM (with lunch)",venue:"Garden Area",dressCode:"Colourful Indo Western/Indian",note:"Henna, melody & delightful lunch in the garden.",caricature:"./editable/assets/caricature-mehendi.jpg"},
-  {name:"Engagement",day:"Day 1 (8 Dec)",glyph:"💍",date:"8 Dec 2026",time:"4:30 PM – 5:30 PM (with high tea)",venue:"Garden Area",dressCode:"Pastel Indo Western/Indian",note:"Two rings, two hearts & sunset high tea.",caricature:"./editable/assets/caricature-engagement.jpg"},
-  {name:"Sangeet",day:"Day 1 (8 Dec)",glyph:"✧",date:"8 Dec 2026",time:"7:30 PM onwards (dinner)",venue:"Kalinga Hall",dressCode:"Bling Indo Western/Indian",note:"A night of dance, music & celebratory dinner.",caricature:"./editable/assets/caricature-sangeet.jpg"},
-  {name:"Haldi",day:"Day 2 (9 Dec)",glyph:"❋",date:"9 Dec 2026",time:"10:00 AM – 1:00 PM",venue:"Pool Side",dressCode:"Shades of Yellow Indo Western/Indian",note:"Sunshine, turmeric laughter & poolside splashes.",caricature:"./editable/assets/caricature-haldi.jpg"},
-  {name:"Wedding & Reception",day:"Day 2 (9 Dec)",glyph:"☀",date:"9 Dec 2026",time:"6:30 PM onwards",venue:"Garden Area (Varmala & wedding)",dressCode:"Traditional Indian",note:"Varmala at 8pm and wedding at 10:30 PM",caricature:"./editable/assets/caricature-wedding.jpg"},
-  {name:"Farewell Breakfast",day:"Day 3 (10 Dec)",glyph:"☕",date:"10 Dec 2026",time:"8:30 AM – 10:30 AM",venue:"Empires Beachfront",dressCode:"Comfortable / Casual",note:"A final breakfast, warm hugs, and memories to cherish forever. Followed by checkout at 10:30am",caricature:"./editable/assets/caricature-farewell-breakfast.jpg"}
+  {
+    name:"Wedding & Reception",
+    day:"Wednesday, 9 Dec 2026",
+    glyph:"💍",
+    date:"9 Dec 2026",
+    time:"6:30 PM onwards",
+    venue:"Garden Area (Varmala & Wedding)",
+    dressCode:"Traditional Indian",
+    subEvents:[
+      {label:"Celebration begins",time:"6:30 PM onwards",venue:"Empires Beachfront"},
+      {label:"Varmala",time:"8:00 PM",venue:"Garden Area"},
+      {label:"Wedding Ceremony",time:"10:30 PM",venue:"Garden Area"}
+    ],
+    note:"Celebration begins at 6:30 PM onwards · Varmala at 8:00 PM · Wedding Ceremony at 10:30 PM",
+    caricature:"./editable/assets/caricature-wedding.jpg"
+  }
 ];
 
 var u={
@@ -336,6 +346,7 @@ function CaricaturesSection(){
           (0,i.jsxs)("p",{className:"flex items-center gap-1.5 font-medium",children:[(0,i.jsx)("span",{className:"text-primary",children:"📅"}),`${e.date} · ${e.time}`]}),
           (0,i.jsxs)("p",{className:"flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary",children:"📍"}),e.venue]})
         ]}),
+        e.subEvents&&e.subEvents.length>0?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 space-y-1.5",children:e.subEvents.map((s,si)=>(0,i.jsxs)("div",{className:"flex items-center justify-between text-xs",children:[(0,i.jsxs)("span",{className:"font-medium text-foreground/90 flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary text-[0.65rem]",children:"◈"}),s.label]}),(0,i.jsx)("span",{className:"text-muted-foreground font-mono text-[0.7rem]",children:s.time})]},si))}):null,
         e.dressCode?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 flex flex-wrap items-center justify-between gap-2",children:(0,i.jsxs)("span",{className:"badge-dress",children:[(0,i.jsx)("span",{children:"✨"}),`Dress Code: ${e.dressCode}`]})}):null,
         (0,i.jsx)("p",{className:"mt-2.5 text-xs italic text-muted-foreground",children:e.note})
       ]})
