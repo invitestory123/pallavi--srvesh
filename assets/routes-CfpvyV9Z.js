@@ -424,10 +424,9 @@ function j(){
     try{await navigator.clipboard.writeText(window.location.href),n("Invitation link copied")}catch{n("Copy the link from your browser")}
   }
   return(0,i.jsxs)("footer",{className:"footer-scene relative isolate min-h-[30rem] overflow-hidden",children:[
-    (0,i.jsx)("img",{src:D,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1280,className:"absolute inset-0 -z-30 h-full w-full object-cover",style:{transform:`translate3d(0, ${-e*.32}px, 0) scale(1.12)`}}),
-    (0,i.jsx)("div",{className:"absolute inset-0 -z-20 bg-[linear-gradient(180deg,var(--color-background)_0%,rgba(11,17,30,0.85)_25%,rgba(11,17,30,0.94)_100%)]"}),
-    (0,i.jsx)("img",{src:A,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"pointer-events-none absolute -right-24 -top-32 -z-10 h-[110%] w-auto opacity-35"}),
-    (0,i.jsx)("img",{src:k,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"lantern-breathe pointer-events-none absolute -left-16 top-8 -z-10 w-24 opacity-30"}),
+    (0,i.jsx)("img",{src:D,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1280,className:"hidden"}),
+    (0,i.jsx)("img",{src:A,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"pointer-events-none absolute -right-24 -top-32 -z-10 h-[110%] w-auto opacity-75 drop-shadow-[0_0_18px_rgba(234,198,104,0.4)]"}),
+    (0,i.jsx)("img",{src:k,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"lantern-breathe pointer-events-none absolute -left-12 top-6 -z-10 w-28 opacity-60 drop-shadow-[0_0_24px_rgba(234,198,104,0.5)]"}),
     (0,i.jsxs)("div",{className:"mx-auto flex max-w-lg flex-col items-center justify-start px-7 pt-12 pb-14 text-center relative z-10",children:[
       (0,i.jsx)("img",{src:O,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1024,className:"w-24 opacity-80"}),
       (0,i.jsx)("p",{className:"mt-4 invitation-note font-display italic text-xl sm:text-2xl text-primary font-medium leading-relaxed max-w-sm drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",children:_wft.invitationNote??"Eagerly waiting to celebrate with you, best regards & love from"}),

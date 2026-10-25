@@ -212,10 +212,14 @@ header img[src*="hero-arch"] {
 
 .footer-scene {
   background-color: #0b111e !important;
+  background-image: radial-gradient(circle at 50% 20%, rgba(28, 42, 72, 0.95) 0%, rgba(11, 17, 30, 0.98) 70%),
+                    radial-gradient(rgba(234, 198, 104, 0.22) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 28px 28px, 14px 14px !important;
 }
 
 .footer-scene > img:first-child {
-  filter: brightness(0.65) saturate(1.15) !important;
+  display: none !important;
 }
 
 .text-foreground {
