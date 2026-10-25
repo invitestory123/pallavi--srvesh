@@ -329,29 +329,112 @@ function CoupleIntroSection(){
   ]})
 }
 
-/* Caricature Event Pictures in place of love story pictures */
-function CaricaturesSection(){
-  return(0,i.jsx)("section",{className:"relative px-6 pb-16",children:
-    (0,i.jsx)("div",{className:"space-y-8",children:l.map((e,t)=>(0,i.jsx)(x,{delay:t*80,children:(0,i.jsxs)("article",{className:"card-soft caricature-gallery-card overflow-hidden rounded-lg border border-primary/20 shadow-sm",children:[
-      e.caricature?(0,i.jsx)("div",{className:"relative aspect-[4/3] w-full overflow-hidden bg-muted",children:(0,i.jsx)("img",{src:e.caricature,alt:`${e.name} caricature illustration`,loading:"lazy",width:800,height:600,className:"h-full w-full object-cover transition-transform duration-500 hover:scale-105"})}):null,
-      (0,i.jsxs)("div",{className:"p-5",children:[
-        (0,i.jsxs)("div",{className:"flex items-center justify-between gap-2",children:[
-          (0,i.jsxs)("div",{className:"flex items-center gap-2",children:[
-            (0,i.jsx)("span",{className:"grid h-8 w-8 place-items-center rounded-full border border-primary/30 text-primary text-sm",children:e.glyph}),
-            (0,i.jsx)("h3",{className:"font-display text-2xl text-foreground",children:e.name})
-          ]}),
-          (0,i.jsx)("span",{className:"badge-day",children:e.day})
+/* Celebrations / Itinerary Section */
+function CelebrationsSection(){
+  return(0,i.jsxs)("section",{className:"relative px-6 pb-16",children:[
+    (0,i.jsx)("img",{src:"external/media.invitestory.in/seashell-vows/src/assets/bougainvillea-divider.png",alt:"","aria-hidden":"true",loading:"lazy",width:2172,height:724,className:"pointer-events-none mx-auto mb-8 w-full max-w-md opacity-80"}),
+    (0,i.jsx)(x,{children:(0,i.jsx)(C,{overline:"The Celebration",title:"Wedding & Reception"})}),
+    (0,i.jsx)("div",{className:"space-y-4 mt-6",children:l.map((e,t)=>(0,i.jsx)(x,{delay:t*60,children:(0,i.jsxs)("article",{className:"card-soft press p-5 border border-primary/20 rounded-lg",children:[
+      (0,i.jsxs)("div",{className:"flex items-center justify-between gap-3",children:[
+        (0,i.jsxs)("div",{className:"flex items-center gap-3 min-w-0",children:[
+          (0,i.jsx)("span",{className:"grid h-11 w-11 shrink-0 place-items-center rounded-full border border-primary/30 text-primary text-base font-semibold",children:e.glyph}),
+          (0,i.jsxs)("div",{className:"min-w-0",children:[
+            (0,i.jsx)("h3",{className:"font-display text-2xl text-foreground truncate",children:e.name}),
+            (0,i.jsxs)("p",{className:"text-[0.62rem] uppercase tracking-airy text-muted-foreground",children:[e.date," · ",e.time]})
+          ]})
         ]}),
-        (0,i.jsxs)("div",{className:"mt-3 text-xs space-y-1 text-foreground/80",children:[
-          (0,i.jsxs)("p",{className:"flex items-center gap-1.5 font-medium",children:[(0,i.jsx)("span",{className:"text-primary",children:"📅"}),`${e.date} · ${e.time}`]}),
-          (0,i.jsxs)("p",{className:"flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary",children:"📍"}),e.venue]})
-        ]}),
-        e.subEvents&&e.subEvents.length>0?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 space-y-1.5",children:e.subEvents.map((s,si)=>(0,i.jsxs)("div",{className:"flex items-center justify-between text-xs",children:[(0,i.jsxs)("span",{className:"font-medium text-foreground/90 flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary text-[0.65rem]",children:"◈"}),s.label]}),(0,i.jsx)("span",{className:"text-muted-foreground font-mono text-[0.7rem]",children:s.time})]},si))}):null,
-        e.dressCode?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 flex flex-wrap items-center justify-between gap-2",children:(0,i.jsxs)("span",{className:"badge-dress",children:[(0,i.jsx)("span",{children:"✨"}),`Dress Code: ${e.dressCode}`]})}):null,
-        (0,i.jsx)("p",{className:"mt-2.5 text-xs italic text-muted-foreground",children:e.note})
-      ]})
+        (0,i.jsx)("span",{className:"badge-day shrink-0",children:e.day})
+      ]}),
+      (0,i.jsxs)("div",{className:"mt-3 text-xs space-y-1 text-foreground/80",children:[
+        (0,i.jsxs)("p",{className:"flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary",children:"📍"}),e.venue]})
+      ]}),
+      e.dressCode?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 flex flex-wrap items-center justify-between gap-2",children:(0,i.jsxs)("span",{className:"badge-dress",children:[(0,i.jsx)("span",{children:"✨"}),`Dress Code: ${e.dressCode}`]})}):null,
+      e.note?(0,i.jsx)("p",{className:"mt-2 text-xs italic text-muted-foreground",children:e.note}):null,
+      e.subEvents?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 space-y-1 text-xs",children:e.subEvents.map(s=>(0,i.jsxs)("div",{className:"flex justify-between text-muted-foreground",children:[(0,i.jsxs)("span",{children:["• ",s.label]}),(0,i.jsxs)("span",{children:[s.time," (",s.venue,")"]})]},s.label))}):null
     ]})},e.name))})
-  })
+  ]})
+}
+
+/* Caricatures of Events as Moments at last */
+function MomentsSection(){
+  let moments = _w.moments ?? [
+    {
+      name: "Mehendi",
+      day: "Day 1",
+      glyph: "❁",
+      date: "8 Dec 2026",
+      src: "./editable/assets/caricature-mehendi.jpg",
+      caricature: "./editable/assets/caricature-mehendi.jpg",
+      note: "Henna, melody & delightful lunch in the garden."
+    },
+    {
+      name: "Engagement",
+      day: "Day 1",
+      glyph: "💍",
+      date: "8 Dec 2026",
+      src: "./editable/assets/caricature-engagement.jpg",
+      caricature: "./editable/assets/caricature-engagement.jpg",
+      note: "Two rings, two hearts & sunset high tea."
+    },
+    {
+      name: "Sangeet",
+      day: "Day 1",
+      glyph: "✧",
+      date: "8 Dec 2026",
+      src: "./editable/assets/caricature-sangeet.jpg",
+      caricature: "./editable/assets/caricature-sangeet.jpg",
+      note: "A night of dance, music & celebratory dinner."
+    },
+    {
+      name: "Haldi",
+      day: "Day 2",
+      glyph: "❋",
+      date: "9 Dec 2026",
+      src: "./editable/assets/caricature-haldi.jpg",
+      caricature: "./editable/assets/caricature-haldi.jpg",
+      note: "Sunshine, turmeric laughter & poolside splashes."
+    },
+    {
+      name: "Wedding & Reception",
+      day: "Day 2",
+      glyph: "☀",
+      date: "9 Dec 2026",
+      src: "./editable/assets/caricature-wedding.jpg",
+      caricature: "./editable/assets/caricature-wedding.jpg",
+      note: "Varmala at 8:00 PM and wedding ceremony at 10:30 PM."
+    }
+  ];
+
+  return (0,i.jsxs)("section",{className:"moments-section relative px-6 pb-20",children:[
+    (0,i.jsx)(x,{children:(0,i.jsx)(C,{overline:"Cherished Memories",title:"Moments"})}),
+    (0,i.jsx)(x,{delay:40,children:(0,i.jsx)("p",{className:"mx-auto -mt-2 max-w-sm text-center text-xs leading-relaxed text-muted-foreground mb-8",children:"Artistic caricature moments capturing every cherished ritual, joyful rhythm, and sacred celebration."})}),
+    (0,i.jsx)("div",{className:"space-y-8",children:moments.map((m,idx)=>(
+      (0,i.jsx)(x,{delay:idx*80,children:
+        (0,i.jsxs)("article",{className:"card-soft caricature-gallery-card overflow-hidden rounded-lg border border-primary/20 shadow-sm transition-all duration-300 hover:shadow-md",children:[
+          (0,i.jsxs)("div",{className:"relative aspect-[4/3] w-full overflow-hidden bg-muted",children:[
+            (0,i.jsx)("img",{
+              src: m.src || m.caricature || m.image,
+              alt: `${m.name || m.title} caricature illustration`,
+              loading: "lazy",
+              width: 800,
+              height: 600,
+              className: "h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+            }),
+            (0,i.jsx)("div",{className:"absolute top-3 right-3",children:
+              (0,i.jsx)("span",{className:"badge-day bg-background/90 backdrop-blur-sm shadow-xs",children:m.day})
+            })
+          ]}),
+          (0,i.jsxs)("div",{className:"p-5 text-center",children:[
+            (0,i.jsxs)("div",{className:"flex items-center justify-center gap-2",children:[
+              m.glyph ? (0,i.jsx)("span",{className:"grid h-7 w-7 place-items-center rounded-full border border-primary/30 text-primary text-xs",children:m.glyph}) : null,
+              (0,i.jsx)("h3",{className:"font-display text-2xl text-foreground",children:m.title || m.name})
+            ]}),
+            m.note ? (0,i.jsx)("p",{className:"mt-2 text-xs italic text-muted-foreground max-w-sm mx-auto",children:m.note}) : null
+          ]})
+        ]})
+      }, m.name || m.title || idx)
+    ))})
+  ]});
 }
 
 var w="external/media.invitestory.in/seashell-vows/src/assets/watercolor-lantern.png",
@@ -466,8 +549,8 @@ function z(){
     ]})}),
     /* Bride and Groom Intro Section (Bride details first then Groom) */
     (0,i.jsx)(CoupleIntroSection,{}),
-    /* Caricature Event Pictures Section in place of love story pictures */
-    (0,i.jsx)(CaricaturesSection,{}),
+    /* Celebrations Itinerary Section */
+    (0,i.jsx)(CelebrationsSection,{}),
     /* Wish sky animation */
     (0,i.jsx)(x,{children:(0,i.jsx)(E,{})}),
     /* Venue & Map Section */
@@ -483,11 +566,13 @@ function z(){
       ]})
     ]})}),
     /* Save our date calendar */
-    (0,i.jsx)("section",{className:"px-6 pb-20",children:(0,i.jsx)(x,{children:(0,i.jsxs)("div",{className:"card-soft p-6 text-center border border-primary/20 rounded-lg",children:[
+    (0,i.jsx)("section",{className:"px-6 pb-16",children:(0,i.jsx)(x,{children:(0,i.jsxs)("div",{className:"card-soft p-6 text-center border border-primary/20 rounded-lg",children:[
       (0,i.jsx)("p",{className:"script text-lg text-primary",children:"Save our date"}),
       (0,i.jsx)("p",{className:"mt-2 text-sm text-muted-foreground",children:"Add every ceremony to your calendar in one tap."}),
       (0,i.jsx)("button",{type:"button",onClick:p,className:"press mt-5 flex min-h-[52px] w-full items-center justify-center rounded-sm border border-primary/45 bg-secondary text-[0.68rem] uppercase tracking-airy text-foreground",children:"Add to Calendar"})
     ]})})}),
+    /* Caricatures of Events as Moments at last */
+    (0,i.jsx)(MomentsSection,{}),
     /* Footer */
     (0,i.jsx)(j,{})
   ]})
