@@ -335,15 +335,15 @@ function CelebrationsSection(){
     (0,i.jsx)("img",{src:"external/media.invitestory.in/seashell-vows/src/assets/bougainvillea-divider.png",alt:"","aria-hidden":"true",loading:"lazy",width:2172,height:724,className:"pointer-events-none mx-auto mb-8 w-full max-w-md opacity-80"}),
     (0,i.jsx)(x,{children:(0,i.jsx)(C,{overline:"The Celebration",title:"Wedding & Reception"})}),
     (0,i.jsx)("div",{className:"space-y-4 mt-6",children:l.map((e,t)=>(0,i.jsx)(x,{delay:t*60,children:(0,i.jsxs)("article",{className:"card-soft press p-5 border border-primary/20 rounded-lg",children:[
-      (0,i.jsxs)("div",{className:"flex items-center justify-between gap-3",children:[
-        (0,i.jsxs)("div",{className:"flex items-center gap-3 min-w-0",children:[
+      (0,i.jsxs)("div",{className:"flex flex-wrap sm:flex-nowrap items-start justify-between gap-2.5",children:[
+        (0,i.jsxs)("div",{className:"flex items-center gap-3 min-w-0 flex-1",children:[
           (0,i.jsx)("span",{className:"grid h-11 w-11 shrink-0 place-items-center rounded-full border border-primary/30 text-primary text-base font-semibold",children:e.glyph}),
           (0,i.jsxs)("div",{className:"min-w-0",children:[
-            (0,i.jsx)("h3",{className:"font-display text-2xl text-foreground truncate",children:e.name}),
-            (0,i.jsxs)("p",{className:"text-[0.62rem] uppercase tracking-airy text-muted-foreground",children:[e.date," · ",e.time]})
+            (0,i.jsx)("h3",{className:"font-display text-xl sm:text-2xl text-foreground font-semibold leading-snug break-words",children:e.name}),
+            (0,i.jsxs)("p",{className:"text-[0.66rem] uppercase tracking-airy text-muted-foreground mt-0.5",children:[e.date," · ",e.time]})
           ]})
         ]}),
-        (0,i.jsx)("span",{className:"badge-day shrink-0",children:e.day})
+        (0,i.jsx)("span",{className:"badge-day shrink-0 self-start text-[0.65rem] px-2.5 py-1 whitespace-nowrap",children:e.day})
       ]}),
       (0,i.jsxs)("div",{className:"mt-3 text-xs space-y-1 text-foreground/80",children:[
         (0,i.jsxs)("p",{className:"flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary",children:"📍"}),e.venue]})
@@ -425,15 +425,15 @@ function j(){
   }
   return(0,i.jsxs)("footer",{className:"footer-scene relative isolate min-h-[30rem] overflow-hidden",children:[
     (0,i.jsx)("img",{src:D,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1280,className:"absolute inset-0 -z-30 h-full w-full object-cover",style:{transform:`translate3d(0, ${-e*.32}px, 0) scale(1.12)`}}),
-    (0,i.jsx)("div",{className:"absolute inset-0 -z-20 bg-[linear-gradient(180deg,var(--color-background)_0%,transparent_24%,color-mix(in_oklab,var(--color-background)_38%,transparent)_100%)]"}),
-    (0,i.jsx)("img",{src:A,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"pointer-events-none absolute -right-24 -top-32 -z-10 h-[110%] w-auto opacity-40"}),
-    (0,i.jsx)("img",{src:k,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"lantern-breathe pointer-events-none absolute -left-10 top-24 -z-10 w-28 opacity-70"}),
-    (0,i.jsxs)("div",{className:"mx-auto flex max-w-lg flex-col items-center justify-start px-7 pt-12 pb-14 text-center",children:[
-      (0,i.jsx)("img",{src:O,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1024,className:"w-24 opacity-75"}),
-      (0,i.jsx)("p",{className:"mt-4 script text-lg sm:text-xl text-primary leading-relaxed max-w-sm",children:_wft.invitationNote??"Eagerly waiting to celebrate with you, best regards & love from"}),
-      (0,i.jsx)("h2",{className:"mt-3 font-display text-[1.8rem] sm:text-[2.2rem] leading-snug text-foreground font-medium",children:_wft.hosts??"Dr BK Purohit & Dr Sujata Hota"}),
-      (0,i.jsx)("p",{className:"mt-1 script text-xl sm:text-2xl text-primary font-medium",children:_wft.family??"& Purohit family"}),
-      (0,i.jsx)("p",{className:"mt-3 script hashtag-script text-primary font-medium",children:c.hashtag}),
+    (0,i.jsx)("div",{className:"absolute inset-0 -z-20 bg-[linear-gradient(180deg,var(--color-background)_0%,rgba(11,17,30,0.85)_25%,rgba(11,17,30,0.94)_100%)]"}),
+    (0,i.jsx)("img",{src:A,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"pointer-events-none absolute -right-24 -top-32 -z-10 h-[110%] w-auto opacity-35"}),
+    (0,i.jsx)("img",{src:k,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1536,className:"lantern-breathe pointer-events-none absolute -left-16 top-8 -z-10 w-24 opacity-30"}),
+    (0,i.jsxs)("div",{className:"mx-auto flex max-w-lg flex-col items-center justify-start px-7 pt-12 pb-14 text-center relative z-10",children:[
+      (0,i.jsx)("img",{src:O,alt:"","aria-hidden":"true",loading:"lazy",width:1024,height:1024,className:"w-24 opacity-80"}),
+      (0,i.jsx)("p",{className:"mt-4 invitation-note font-display italic text-xl sm:text-2xl text-primary font-medium leading-relaxed max-w-sm drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",children:_wft.invitationNote??"Eagerly waiting to celebrate with you, best regards & love from"}),
+      (0,i.jsx)("h2",{className:"mt-3 font-display text-[1.8rem] sm:text-[2.2rem] leading-snug text-foreground font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]",children:_wft.hosts??"Dr BK Purohit & Dr Sujata Hota"}),
+      (0,i.jsx)("p",{className:"mt-1 script text-xl sm:text-2xl text-primary font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]",children:_wft.family??"& Purohit family"}),
+      (0,i.jsx)("p",{className:"mt-3 script hashtag-script text-primary font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]",children:c.hashtag}),
       (0,i.jsxs)("div",{className:"mt-7 grid w-full max-w-sm grid-cols-2 border-y border-primary/25 py-4 text-left",children:[
         (0,i.jsxs)("div",{className:"border-r border-primary/25 pr-5",children:[
           (0,i.jsx)("p",{className:"text-xs text-muted-foreground",children:"The Wedding"}),
