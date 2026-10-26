@@ -136,7 +136,6 @@ var l=_w.events??[
       {label:"Varmala",time:"8:00 PM",venue:"Garden Area"},
       {label:"Wedding Ceremony",time:"10:30 PM",venue:"Garden Area"}
     ],
-    note:"Celebration begins at 6:30 PM onwards · Varmala at 8:00 PM · Wedding Ceremony at 10:30 PM",
     caricature:"./editable/assets/caricature-wedding.jpg"
   }
 ];
@@ -349,8 +348,8 @@ function CelebrationsSection(){
         (0,i.jsxs)("p",{className:"flex items-center gap-1.5",children:[(0,i.jsx)("span",{className:"text-primary",children:"📍"}),e.venue]})
       ]}),
       e.dressCode?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 flex flex-wrap items-center justify-between gap-2",children:(0,i.jsxs)("span",{className:"badge-dress",children:[(0,i.jsx)("span",{children:"✨"}),`Dress Code: ${e.dressCode}`]})}):null,
-      e.note?(0,i.jsx)("p",{className:"mt-2 text-xs italic text-muted-foreground",children:e.note}):null,
-      e.subEvents?(0,i.jsx)("div",{className:"mt-3 pt-2.5 border-t border-primary/10 space-y-1 text-xs",children:e.subEvents.map(s=>(0,i.jsxs)("div",{className:"flex justify-between text-muted-foreground",children:[(0,i.jsxs)("span",{children:["• ",s.label]}),(0,i.jsxs)("span",{children:[s.time," (",s.venue,")"]})]},s.label))}):null
+      (!e.subEvents&&e.note)?(0,i.jsx)("p",{className:"mt-2 text-xs italic text-muted-foreground",children:e.note}):null,
+      e.subEvents?(0,i.jsx)("div",{className:"sub-events-list",children:e.subEvents.map(s=>(0,i.jsxs)("div",{className:"sub-event-row",children:[(0,i.jsxs)("div",{className:"sub-event-left",children:[(0,i.jsx)("span",{className:"sub-event-bullet",children:"✦"}),(0,i.jsxs)("div",{children:[(0,i.jsx)("p",{className:"sub-event-label",children:s.label}),s.venue?(0,i.jsx)("p",{className:"sub-event-venue",children:s.venue}):null]})]}),(0,i.jsx)("span",{className:"sub-event-time",children:s.time})]},s.label))}):null
     ]})},e.name))})
   ]})
 }

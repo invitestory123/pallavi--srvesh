@@ -69,7 +69,6 @@ window.WEDDING_DATA = {
         { label: "Varmala", time: "8:00 PM", venue: "Garden Area" },
         { label: "Wedding Ceremony", time: "10:30 PM", venue: "Garden Area" },
       ],
-      note: "Celebration begins at 6:30 PM onwards · Varmala at 8:00 PM · Wedding Ceremony at 10:30 PM",
     },
   ],
 
